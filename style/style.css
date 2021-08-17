@@ -8,7 +8,7 @@
 --font-1: 'Inter', sans-serif;
 --font-2: 'Lexend Deca', sans-serif;
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
     font-size: 1.5rem;
     background-color: var(--dark-blue);
 }
-section {
+main {
     width: 90%;
     margin: 1.5rem;
     border-radius: 1rem;
@@ -43,7 +43,6 @@ p{
 p, span{
     color: var(--slightly-transparent-white);
     font-family: var(--font-2);
-    font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
     opacity: 0.5;
@@ -71,12 +70,17 @@ span {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    
 }
 .container-text h3, p{
     margin-top: 1.8rem;
+    
 }
-.container-text span:last-child {
-margin-bottom: 2rem;
+.container-stats {
+    text-align: center;
+}
+.container-stats div:last-child {
+    margin-bottom: 2rem;
 }
 .attribution {
     color: var(--white);
@@ -89,12 +93,13 @@ margin-bottom: 2rem;
     color: var(--slightly-transparent-white);
 }
 @media only screen and (min-width: 1024px) {
-    section {
-        margin: 15rem 5rem;
+    main {
+        margin: 5.5rem 5rem;
         display: grid;
+        align-items: start;
+        justify-items: center;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-areas: 'container-text' 'container-img' ;
+        grid-template-areas: 'container-text' 'container-img';
     }
     .container-img {
         width: 100%;
@@ -105,20 +110,24 @@ margin-bottom: 2rem;
         border-radius: 0 1rem 1rem 0;
     }
     .container-text {
+        margin-top: 8rem;
         grid-area: container-text;
     }
     h2 {
-        margin: 2rem 3rem;  
+        width: 100%;
+        height: 20%;
         text-align: start;
     }
     p {
-        display: block;
+        width: 100%;
+        height: 20%;
         text-align: start;
-        margin-left: 3rem;
     }
     .container-stats {
+        width: 100%;
         display: flex;
-        margin-top: 3rem;
+        justify-content: space-around;
+        margin-top: 5rem;
     }
     .container-stats span {
         margin-top: 1.8rem;
