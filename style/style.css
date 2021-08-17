@@ -81,6 +81,8 @@ margin-bottom: 2rem;
 .attribution {
     color: var(--white);
     margin-bottom: 1.3rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
 .attribution a {
     text-decoration: none;
@@ -124,5 +126,6 @@ margin-bottom: 2rem;
     .attribution {
         font-size: 2rem;
         margin-bottom: 3rem;
+        text-align: center;
     }
 }
